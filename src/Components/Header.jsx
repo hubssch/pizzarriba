@@ -1,19 +1,36 @@
 import React from 'react';
-import SpeedyGonzales from '../assets/Speedy_gonzales.webp'; // Upewnij się, że plik istnieje w tej ścieżce
-// import './Header.css'; // opcjonalnie, jeśli chcesz dodać style
+import SpeedyGonzales from '../assets/Speedy_gonzales.svg'; // Upewnij się, że plik istnieje w tej ścieżce
+
 
 const Header = () => {
     return (
-        <header className="header">
-            <div className="header__logo">
-                <img src={SpeedyGonzales} alt="Pizzarriba Logo" />
-                <h1>Pizzarriba</h1>
+        <header className=" flex flex-col items-center">
+            <div className="flex flex-col items-center gap-4">
+                <img
+                    src={SpeedyGonzales}
+                    alt="Pizzarriba Logo"
+                    className="w-60 h-auto"
+                />
+                <h1 className="text-6xl font-bold text-center text-stone-200">Pizzarriba</h1>
             </div>
-            <nav className="header__nav">
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">O nas</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+
+            <nav className="mt-6">
+                <ul className="flex gap-6 list-none p-0 m-0 text-amber-500">
+                    <li>
+                        <a className="text-lg hover:underline" href="#menu">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a className="text-lg hover:underline" href="#about">
+                            O nas
+                        </a>
+                    </li>
+                    <li>
+                        <a className="text-lg hover:underline" href="#contact">
+                            Kontakt
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
