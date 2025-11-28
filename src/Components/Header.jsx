@@ -15,19 +15,19 @@ const Header = () => {
             </div>
 
             <nav className="mt-6">
-                <ul className="flex gap-6 list-none p-0 m-0 text-amber-500">
+                <ul className="flex gap-6 list-none p-0 m-0 text-amber-500 text-2xl py-4">
                     <li>
-                        <a className="text-lg hover:underline" href="#menu">
+                        <a className="hover:underline" href="#menu">
                             Menu
                         </a>
                     </li>
                     <li>
-                        <a className="text-lg hover:underline" href="#about">
+                        <a className="hover:underline" href="#about">
                             O nas
                         </a>
                     </li>
                     <li>
-                        <a className="text-lg hover:underline" href="#contact">
+                        <a className="hover:underline" href="#contact">
                             Kontakt
                         </a>
                     </li>
