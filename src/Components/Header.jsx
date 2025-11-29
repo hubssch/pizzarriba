@@ -17,17 +17,17 @@ const Header = () => {
             <nav className="mt-6">
                 <ul className="flex gap-6 list-none p-0 m-0 text-amber-500 text-2xl py-4">
                     <li>
-                        <a className="hover:underline" href="#menu">
+                        <a className="hover:bg-yellow-400 hover:bg-yellow-500 font-bold py-2 px-4 rounded" href="#menu">
                             Menu
                         </a>
                     </li>
                     <li>
-                        <a className="hover:underline" href="#about">
+                        <a className="hover:bg-yellow-400 hover:bg-yellow-500 font-bold py-2 px-4 rounded" href="#about">
                             O nas
                         </a>
                     </li>
                     <li>
-                        <a className="hover:underline" href="#contact">
+                        <a className="hover:bg-yellow-400 hover:bg-yellow-500 font-bold py-2 px-4 rounded" href="#contact">
                             Kontakt
                         </a>
                     </li>
