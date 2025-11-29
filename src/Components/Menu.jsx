@@ -32,7 +32,7 @@ const Content = () => {
     return (
         <div className="content flex items-center text-stone-200 px-4">
             <section className="container burgers-container ">
-                <h2 className='mx-10 px-6 font-bold text-4xl mb-4 '>Burgers</h2>
+                <h2 className='mx-10 font-bold text-4xl mb-4 mt-15'>Burgers</h2>
                 <div className="items">
                     {burgers.map(burger => (
                         <div key={burger.id} className="item border-b border-amber-500 p-4 last:border-b-0 mx-4">
@@ -49,7 +49,7 @@ const Content = () => {
             </section>
 
             <section className="container pizzas-container">
-                <h2 className='mx-10 px-6 font-bold text-4xl mb-4'>Pizzas</h2>
+                <h2 className='mx-10 font-bold text-4xl mb-4 mt-15'>Pizzas</h2>
                 <div className="items">
                     {pizzas.map(pizza => (
                         <div key={pizza.id} className="item border-b border-amber-500 p-4 last:border-b-0 mx-4">
@@ -66,7 +66,7 @@ const Content = () => {
             </section>
 
             <section className="container tacos-container">
-                <h2 className='mx-10 px-6 font-bold text-4xl mb-4'>Tacos</h2>
+                <h2 className='mx-10 font-bold text-4xl mb-4 mt-15'>Tacos</h2>
                 <div className="items">
                     {tacos.map(taco => (
                         <div key={taco.id} className="item border-b border-amber-500 p-4 last:border-b-0 mx-4">

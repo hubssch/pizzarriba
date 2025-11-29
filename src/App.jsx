@@ -1,17 +1,28 @@
-import { useState } from 'react'
 import Header from './Components/Header.jsx'
-import Content from './Components/Content.jsx'
-// import './App.css'
+import Menu from './Components/Menu.jsx'
+import Reservations from './Components/Reservations.jsx'
+import Contact from './Components/Contact.jsx'
+import About from './Components/About.jsx'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header></Header>
-      <Content></Content>
-
-    </>
+    <BrowserRouter>
+      <Header />
+      <main className="pb-12">
+        <Routes>
+          <Route path="/" element={<Menu />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/reservations" element={<Reservations />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
 
