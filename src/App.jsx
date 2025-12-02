@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main className="pb-12">
         <Routes>
-          <Route path="/" element={<Menu />} />
+          <Route path="/" element={<About />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/contact" element={<Contact />} />

@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
 body {
-  background-color: oklch(27.9% 0.077 45.635);
+  @apply bg-gradient-to-b from-[oklch(27.9%_0.077_45.635)] to-slate-800;
   /* ciemne tło */
   /* albo obraz */
-  background-image: url('./assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,7 +11,7 @@ body {
 
 
 
-/* :root {
+:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -27,7 +26,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
